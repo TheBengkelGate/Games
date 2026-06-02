@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bengkel Gate</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    background:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1920') center/cover fixed;
+    overflow-x:hidden;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    backdrop-filter:blur(6px);
+    z-index:1;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+}
+
+.logo{
+    font-size:80px;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:56px;
+    font-weight:bold;
+}
+
+.desc{
+    margin-top:10px;
+    color:#cfcfcf;
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.play{
+    background:#22c55e;
+}
+
+.discord{
+    background:#5865F2;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.stats{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,.1);
+    padding:18px 30px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.team,
+.apply{
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.team h2,
+.apply h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.team-grid{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.member{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:15px;
+    min-width:220px;
+}
+
+.member h3{
+    margin-bottom:10px;
+}
+
+.apply-buttons{
+    margin-top:30px;
+}
+
+.apply-btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.apply-btn:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:#bdbdbd;
+    padding:40px 20px;
+}
+  .gallery{
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.gallery h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.15);
+    transition:.3s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+.card,
+.member,
+.apply-btn{
+    box-shadow:0 0 20px rgba(0,0,0,.25);
+}
+
+.member{
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<section class="hero">
+
+<div class="container">
+
+    <div class="logo">🛠</div>
+
+    <div class="title">THE BENGKEL</div>
+
+    <div class="desc">
+        Welcome to our Roblox experience
+    </div>
+
+    <div class="buttons">
+
+        <a class="btn play"
+        href="https://www.roblox.com/games/73118819766834/The-Bengkel-Gen-Z"
+        target="_blank">
+        PLAY NOW
+        </a>
+
+        <a class="btn discord"
+        href="https://discord.gg/ZppyY8UvMs"
+        target="_blank">
+        DISCORD
+        </a>
+
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+            👥 Players Online<br>
+            1
+        </div>
+
+        <div class="card">
+            ⭐ Visits<br>
+            4K+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="team">
+
+    <h2>STAFF TEAM</h2>
+
+    <div class="team-grid">
+
+        <div class="member">
+            <h3>AelLicious</h3>
+            <p>OWNER & DEV TEAM</p>
+        </div>
+
+        <div class="member">
+            <h3>MaybeUNCRY</h3>
+            <p>HEAD STAFF</p>
+        </div>
+
+        <div class="member">
+            <h3>Mutia</h3>
+            <p>STAFF</p>
+        </div>
+              <div class="member">
+            <h3>KarinUNCRY</h3>
+            <p>STAFF</p>
+        </div>
+              <div class="member">
+            <h3>DammUNCRY</h3>
+            <p>STAFF</p>
+        </div>
+              <div class="member">
+            <h3>AbelUNCRY</h3>
+            <p>STAFF</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery">
+
+    <h2>COMMUNITY GALLERY</h2>
+
+    <div class="gallery-grid">
+
+        <img src="foto1.jpg" alt="Gallery 1">
+        <img src="foto2.jpg" alt="Gallery 2">
+        <img src="foto3.jpg" alt="Gallery 3">
+        <img src="foto4.jpg" alt="Gallery 4">
+        <img src="foto5.jpg" alt="Gallery 5">
+        <img src="foto6.jpg" alt="Gallery 6">
+
+    </div>
+
+</section>
+
+<section class="apply">
+
+    <h2>JOIN OUR TEAM</h2>
+
+    <div class="apply-buttons">
+
+        <a href="https://discord.com/channels/1510834194740150392/1511177973859094548" class="apply-btn">
+            Daftar Admin
+        </a>
+
+        <a href="https://discord.com/channels/1510834194740150392/1511178172664774736" class="apply-btn">
+            Daftar DJ
+        </a>
+
+        <a href="https://discord.com/channels/1510834194740150392/1511178047850811422" class="apply-btn">
+            Daftar Konten Kreator
+        </a>
+
+    </div>
+
+</section>
+
+<div class="footer">
+    © 2026 THE BENGKEL • All Rights Reserved
+</div>
+
+</body>
+</html>
